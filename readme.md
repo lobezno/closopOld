@@ -6,4 +6,4 @@ I.E.S. Miguel Herrero Pereda 2014
 
 ## Author
 
-Adrian P. [Adr website](http://arreat.es/).
+Adrian P. [website](http://arreat.es/).
