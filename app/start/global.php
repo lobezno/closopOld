@@ -79,3 +79,7 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+// al final de app/start/globals.php agregaríamos lo siguiente:
+App::bind('PastaRepoInterface', 'PastaRepo');
+App::bind('MeatRepoInterface', 'MeatRepo');
+App::bind('SauceRepoInterface', 'SauceRepo');
