@@ -64,6 +64,19 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             'rank'  => 'required'
         );
         
+        // Si el usuario existe:
+        if ($this->exists)
+        {
+            //Evitamos que la regla “unique” tome en cuenta el email y user del usuario actual
+			$rules['email'] .= ',email,' . $this->id_user;
+			$rules['user'] .= ',user,' . $this->id_user;
+        }
+        else // Si no existe...
+        {
+            // La clave es obligatoria:
+            $rules['password'] .= '|required';
+        }
+
         $validator = Validator::make($data, $rules);
         
         if ($validator->passes())
