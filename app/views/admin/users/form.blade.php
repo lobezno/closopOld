@@ -3,7 +3,7 @@
 <?php
 
     if ($user->exists):
-        $form_data = array('route' => array('admin.users.update', $user->id), 'method' => 'PATCH');
+        $form_data = array('route' => array('admin.users.update', $user->id_user), 'method' => 'PATCH');
         $action    = 'Editar';
     else:
         $form_data = array('route' => 'admin.users.store', 'method' => 'POST');

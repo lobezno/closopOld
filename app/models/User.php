@@ -4,17 +4,18 @@ use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
-
+	
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'users';
+	public $primaryKey='id_user';
+    public  $table = 'users';
 	public $errors;
 	protected $fillable = array('email', 'fullname', 'password','user', 'address', 'rank');
 	protected $perPage = 2;	// para paginacion, registros por pagina
-	protected $primaryKey  = 'id_user';
+
 
 	/**
 	 * The attributes excluded from the model's JSON form.
