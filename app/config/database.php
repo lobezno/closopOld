@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => 'http://188.165.183.245/closop',
 			'database'  => 'closop',
-			'username'  => 'root',
-			'password'  => '',
+			'username'  => 'closop',
+			'password'  => 'UH1V314644I1v7G',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
