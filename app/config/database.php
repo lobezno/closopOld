@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'http://188.165.183.245/closop',
+			'host'      => 'http://188.165.183.245/',
 			'database'  => 'closop',
 			'username'  => 'closop',
 			'password'  => 'UH1V314644I1v7G',
